@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OZON</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/dbdf0449d7.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="page">
+    <header class="header">
+        <div class="header__top-block">
+            <span class="top-block__left-side">
+                <div class="top-block__currency">
+                    <button class="currency__btn">RUB</button>
+                </div>
+                <span class="top-block__city">
+                    <button class="city__btn"><i class="fa-solid fa-location-dot"></i>
+                        Ростов-на-Дону
+                    </button>
+                </span>
+                <span class="top-block__dot">•</span>
+                <div class="top-block__address">
+                    <button type="button" class="address__btn">Укажите адрес доставки</button>
+                </div>
+            </span>
+            <nav class="top-block__right-side">
+                <ul class="right-side__list">
+                    <li class="right-side__list-item right-side__list-item-active">
+                        <a class="right-side__btn">Стать продавцом</a>
+                    </li>
+                    <li class="right-side__list-item">
+                        <a class="right-side__btn">Покупать как компания</a>
+                    </li>
+                    <li class="right-side__list-item">
+                        <a class="right-side__btn">Мобильное приложение</a>
+                    </li>
+                    <li class="right-side__list-item">
+                        <a class="right-side__link">Подарочные сертификаты</a>
+                    </li>
+                    <li class="right-side__list-item">
+                        <a class="right-side__link">Помощь</a>
+                    </li>
+                    <li class="right-side__list-item">
+                        <a class="right-side__link">Пункт выдачи</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__body-block">
+            <div class="body-block__actions">
+                <a class="actions__link">
+                    <img class="actions__img" src="https://ir.ozone.ru/s3/cms/e4/tc6/wc200/doodles_2_2.png" alt="акция">
+                </a>
+            </div>
+            <div class="body-block__catalog">
+                <button class="catalog__btn"><i class="fa-solid fa-list-ul catalog__i"></i>Каталог</button>
+            </div>
+            <div class="body-block__search">
+                <div class="search__left-side">
+                    <button class="left-side__btn">Везде<i class="fa-solid fa-caret-down left-side__i"></i></button>
+                </div>
+                <div class="search__center-side">
+                    <label>
+                        <input class="center-side__input" placeholder="Искать на Ozon" maxlength="255">
+                    </label>
+                </div>
+                <div class="search__right-side">
+                    <i class="fa-solid fa-magnifying-glass right-side__i"></i>
+                </div>
+            </div>
+            <nav class="body-block__nav-panel">
+                <ul class="body-block__list">
+                    <li class="body-block__list-item">
+                        <a class="body-block__link"><i class="fa-solid fa-face-smile body-block__i"></i>Войти</a>
+                    </li>
+                    <li class="body-block__list-item">
+                        <a class="body-block__link"><i class="fa-solid fa-box body-block__i"></i>Заказы</a>
+                    </li>
+                    <li class="body-block__list-item">
+                        <a class="body-block__link"><i class="fa-solid fa-heart body-block__i"></i>Избранное</a>
+                    </li>
+                    <li class="body-block__list-item">
+                        <a class="body-block__link"><i class="fa-solid fa-cart-shopping body-block__i"></i>Корзина</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="header__footer-block">
+            <ul class="footer-block__list">
+                <li class="footer-block__list-item footer-block__list-item_active">
+                    <a><i class="fa-solid fa-apple-whole footer-block__i"></i>Ozon fresh</a>
+                </li>
+                <li class="footer-block__list-item">
+                    <a><i class="fa-solid fa-credit-card footer-block__i"></i>Ozon карта</a>
+                </li>
+                <li class="footer-block__list-item">
+                    <a><i class="fa-solid fa-plane footer-block__i"></i>Билеты, отели, туры</a>
+                </li>
+                <li class="footer-block__list-item">
+                    <a><i class="fa-solid fa-shirt footer-block__i"></i>Одежда и обувь</a>
+                </li>
+                <li class="footer-block__list-item">
+                    <a><i class="fa-solid fa-charging-station footer-block__i"></i>Электроника</a>
+                </li>
+                <li class="footer-block__list-item">
+                    <a><i class="fa-solid fa-seedling footer-block__i"></i>Дом и сад</a>
+                </li>
+                <li class="footer-block__list-item">
+                    <a><i class="fa-solid fa-baby footer-block__i"></i>Детские товары</a>
+                </li>
+                <li class="footer-block__list-item">
+                    <a><i class="fa-solid fa-percent footer-block__i"></i>Акции</a>
+                </li>
+                <li class="footer-block__list-item">
+                    <a><i class="fa-solid fa-crown footer-block__i"></i>Premium</a>
+                </li>
+                <li class="footer-block__list-item">
+                    <a><i class="fa-solid fa-store footer-block__i"></i>Бренды</a>
+                </li>
+                <li class="footer-block__list-item">
+                    <a><i class="fa-solid fa-bowl-food footer-block__i"></i>Продукты питания</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="modal" id="modal1">
+            <div class="modal-window">
+                <div class="modal-window-inner">
+                    <div class="modal-window__header">
+                        <span class="modal-window__text">Куда доставить заказ?</span>
+                        <img class="modal__img"
+                             src="https://ir.ozone.ru/graphics/ozon/checkout/addressbook_svg/splash-screen.svg"
+                             alt="address">
+                    </div>
+                    <div class="modal-window__body">
+                        <ul class="modal-window-inner__list">
+                            <li class="modal-window-inner__list-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div class="modal-window-inner__body">
+                                    <span>Ростов-на-Дону</span>
+                                    <button class="modal-window-inner__btn">Изменить</button>
+                                </div>
+                            </li>
+                            <li class="modal-window-inner__list-item">
+                                <div class="modal-window-inner__text">
+                                    Добавьте точный адрес, удобный пункт выдачи или постамат, чтобы заранее увидеть
+                                    условия доставки товаров
+                                </div>
+                            </li>
+                            <li class="modal-window-inner__list-item">
+                                <button class="modal-window__btn">
+                                    <div class="modal-window__footer-title">
+                                        <h3>Выбрать на карте</h3>
+                                    </div>
+                                    <div class="modal-window__footer-text">адрес доставки, пункт выдачи, постамат</div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <span>
+                        <button class="modal__close">X</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="header__content">
+            <div class="content__left-block">
+                <div class="content__left-block-inner">
+                    <div class="left-block__title">
+                        <h1>Все для вашего<br>бизнеса на Ozon</h1>
+                    </div>
+                    <ul class="left-block__list">
+                        <li class="left-block__list-item">Выгодные цены на миллионы товаров</li>
+                        <li class="left-block__list-item">Быстрая доставка по всей России</li>
+                        <li class="left-block__list-item">Удобный документооборот и возмещение НДС</li>
+                    </ul>
+                    <div class="left-block__company">
+                        <h3 class="left-block__h3">Добавьте свою компанию:</h3>
+                        <label>
+                            <input class="company__input" placeholder="Укажите ИНН ИП или организации">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="content__right-block">
+                <img class="right-block__img"
+                     src="https://cdn2.ozone.ru/s3/cblocks/b2b-ozon-business-ab/0.0.38/assets/images/6F8j.png"
+                     alt="Фоновое изображение">
+            </div>
+        </div>
+        <div class="for-companies">
+            <div class="for-companies-inner">
+                <h1>Для компаний любого масштаба</h1>
+                <ul class="for-companies-inner__list">
+                    <li class="for-companies-inner__list-item">
+                        <div class="for-companies-inner__block">
+                            <img class="for-companies-inner__img"
+                                 src="https://cdn2.ozone.ru/s3/cblocks/b2b-ozon-business-ab/0.0.38/assets/images/0RP.png"
+                                 alt="Малому бизнесу">
+                            <h3 class="custom__h3">Малому бизнесу</h3>
+                        </div>
+                    </li>
+                    <li class="for-companies-inner__list-item">
+                        <div class="for-companies-inner__block">
+                            <img class="for-companies-inner__img"
+                                 src="https://cdn2.ozone.ru/s3/cblocks/b2b-ozon-business-ab/0.0.38/assets/images/Huri.png"
+                                 alt="Среднему бизнесу">
+                            <h3 class="custom__h3">Среднему бизнесу</h3>
+                        </div>
+                    </li>
+                    <li class="for-companies-inner__list-item">
+                        <div class="for-companies-inner__block">
+                            <img class="for-companies-inner__img"
+                                 src="https://cdn2.ozone.ru/s3/cblocks/b2b-ozon-business-ab/0.0.38/assets/images/5W6E.png"
+                                 alt="Корпорациям">
+                            <h3 class="custom__h3">Корпорациям</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="our-buyers">
+            <div class="our-byuers-inner">
+                <h1 class="custom__h1">Наши покупатели - лица с разным уровнем задач</h1>
+                <ul class="our-buyers-inner__list">
+                    <li class="our-buyers-inner__list-item">
+                        <div class="our-buyers-inner__block">
+                            <img class="our-buyers-inner__img"
+                                 src="https://cdn2.ozone.ru/s3/cblocks/b2b-ozon-business-ab/0.0.38/assets/images/MQwK.png"
+                                 alt="Собственники">
+                            <h3 class="custom__h3">Собственники</h3>
+                        </div>
+                    </li>
+                    <li class="our-buyers-inner__list-item">
+                        <div class="our-buyers-inner__block">
+                            <img class="our-buyers-inner__img"
+                                 src="https://cdn2.ozone.ru/s3/cblocks/b2b-ozon-business-ab/0.0.38/assets/images/m86S.png"
+                                 alt="Управляющие">
+                            <h3 class="custom__h3">Управляющие</h3>
+                        </div>
+                    </li>
+                    <li class="our-buyers-inner__list-item">
+                        <div class="our-buyers-inner__block">
+                            <img class="our-buyers-inner__img"
+                                 src="https://cdn2.ozone.ru/s3/cblocks/b2b-ozon-business-ab/0.0.38/assets/images/JWlQ.png"
+                                 alt="Эксперты">
+                            <h3 class="custom__h3">Эксперты</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ozon-benefits">
+            <div class="ozon-benefits-inner">
+                <h1 class="custom__h1">Преимущества Ozon для бизнеса</h1>
+                <ul class="ozon-benefits__list">
+                    <li class="ozon-benefits__list-item" style="background-image:
+                        url('https://cdn2.ozone.ru/s3/cblocks/b2b-ozon-business-ab/0.0.38/assets/images/R9Q5.png')">
+                        <h3 class="custom__h3">Миллионы товаров по выгодным ценам</h3>
+                        <ul class="list-item__block">
+                            <li>Персональные рекомандации для бизнеса</li>
+                            <li>Легко выбрать лучшее, сравнивая предложения</li>
+                            <li>Возмещение НДС до 20%</li>
+                        </ul>
+                    </li>
+                    <li class="ozon-benefits__list-item" style="background-image:
+                        url('https://cdn2.ozone.ru/s3/cblocks/b2b-ozon-business-ab/0.0.38/assets/images/lb3c.png')">
+                        <h3 class="custom__h3">Удобная доставка</h3>
+                        <ul class="list-item__block">
+                            <li>Быстрая доставка по всей России</li>
+                            <li>Доставка продуктов от 1 часа в Ozon fresh</li>
+                            <li>Доставка товарров от 1 часа в Ozon Express</li>
+                        </ul>
+                    </li>
+                    <li  class="ozon-benefits__list-item" style="background-image:
+                        url('https://cdn2.ozone.ru/s3/cblocks/b2b-ozon-business-ab/0.0.38/assets/images/mUjW.png')">
+                        <h3 class="custom__h3 list-item__block">Быстрая оплата</h3>
+                        <ul class="list-item__block">
+                            <li>Перевод с расчётного счёта или банковской картой (в том числе корпоративной)</li>
+                        </ul>
+                    </li>
+                    <li class="ozon-benefits__list-item" style="background-image:
+                        url('https://cdn2.ozone.ru/s3/cblocks/b2b-ozon-business-ab/0.0.38/assets/images/09bh.png')">
+                        <h3 class="custom__h3">Лёгкое оформление документов</h3>
+                        <ul class="list-item__block">
+                            <li>Быстрое подключение к ЭДО</li>
+                            <li>Получение документов в электронном или бумажном виде</li>
+                        </ul>
+                    </li>
+                    <li class="ozon-benefits__list-item" style="background-image:
+                        url('https://cdn2.ozone.ru/s3/cblocks/b2b-ozon-business-ab/0.0.38/assets/images/AcH2.png');">
+                        <h3 class="custom__h3">Авиа-, ж/д билеты и отели по выгодным ценам</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="block-legal-entities">
+            <div class="block-legal-entities-inner">
+                <h1 class="custom__h1">Начать покупать как юрлицо просто</h1>
+                <ul class="block-legal-entites__list">
+                    <li class="block-legal-entites__list-item">
+                        <div class="block-legal-entities__header">
+                            <img class="block-legal-entities__img"
+                                 src="https://cdn2.ozone.ru/s3/cblocks/b2b-ozon-business-ab/0.0.38/assets/images/O35.png"
+                                 alt="Первый шаг">
+                        </div>
+                        <div class="block-legal-entities__footer">
+                            <h3 class="custom__h3 custom__h3_v2">Зарегистрируйтесь</h3>
+                            <p>Укажите ИНН вашей компании</p>
+                        </div>
+                    </li>
+                    <li class="block-legal-entites__list-item">
+                        <div class="block-legal-entities__header">
+                            <img class="block-legal-entities__img"
+                                 src="https://cdn2.ozone.ru/s3/cblocks/b2b-ozon-business-ab/0.0.38/assets/images/bPbW.png"
+                                 alt="Второй шаг">
+                        </div>
+                        <div class="block-legal-entities__footer">
+                            <h3 class="custom__h3 custom__h3_v2">Проверьте реквизиты</h3>
+                            <p>Поле «Реквизиты» будет заполнено автоматически — проверьте правильность данных.</p>
+                        </div>
+                    </li>
+                    <li class="block-legal-entites__list-item">
+                        <div class="block-legal-entities__header">
+                            <img class="block-legal-entities__img"
+                                 src="https://cdn2.ozone.ru/s3/cblocks/b2b-ozon-business-ab/0.0.38/assets/images/hf4X.png"
+                                 alt="Третий шаг">
+                        </div>
+                        <div class="block-legal-entities__footer">
+                            <h3 class="custom__h3 custom__h3_v2">Получафте максимум от покупок на Ozon</h3>
+                            <p>Теперь вы можете оформить заказ как юридическое лицо</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-inner">
+                <h1 class="custom__h1">Часто задаваемые вопросы</h1>
+                <ul class="faq-inner__list">
+                    <li class="faq-inner__list-item"><h3>Хочу покупать как бизнес. С чего начать?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <li class="faq-inner__list-item"><h3>Какие способы оплаты доступны для компания?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <li class="faq-inner__list-item"><h3>Как быстро доставят закз?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <li class="faq-inner__list-item"><h3>Что нужно, чтобы покупать как юридическое лицо?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <li class="faq-inner__list-item"><h3>Какике сопроводительнвые документы я получу с заказом?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <img class="top__img" src="https://ir.ozone.ru/s3/cms/12/tdb/group_357672.png" alt="Ozon job">
+            <ul class="top__list">
+                <li>
+                    <i class="fa-solid fa-desktop top__list_i"></i>IT
+                </li>
+                <li>
+                    <i class="fa-solid fa-briefcase top__list_i"></i>Офис
+                </li>
+                <li>
+                    <i class="fa-solid fa-wallet top__list_i"></i>Финтех
+                </li>
+                <li>
+                    <i class="fa-solid fa-boxes-stacked top__list_i"></i>Фулфилмент
+                </li>
+                <li>
+                    <i class="fa-solid fa-apple-whole top__list_i"></i>Fresh
+                </li>
+                <li>
+                    <i class="fa-solid fa-truck top__list_i"></i>Логистика
+                </li>
+                <li>
+                    <i class="fa-solid fa-boxes-packing top__list_i"></i>Работа на складе
+                </li>
+            </ul>
+        </div>
+        <div class="footer__body">
+            <div class="footer__qr-code">
+                <div class="footer__qr-code-inner">
+                    <img class="qr-code__img" src="https://ir.ozone.ru/s3/cms/28/t9c/qr-code_1.png" alt="QR Код">
+                    <p class="qr-code__p">Наведите камеру и скачайте бесплатное приложение Ozon</p>
+                    <div class="qr-code-inner__list">
+                        <img class="qr-code-inner__list-item"
+                             src="https://ir.ozone.ru/s3/cms/0e/ta0/group_357649.png" alt="Для айфонов">
+                        <img class="qr-code-inner__list-item"
+                             src="https://ir.ozone.ru/s3/cms/9b/te1/group_357648.png" alt="Для андроидов">
+                        <img class="qr-code-inner__list-item"
+                             src="https://ir.ozone.ru/s3/cms/20/tcc/group_357647.png" alt="Для huawei">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__body-inner">
+                <div class="footer__body-top">
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <div>
+                                <h5 class="footer__h5">Ozon интернет-магазин</h5>
+                                <ul class="footer__list-links">
+                                    <li class="footer__ozon-shop-item">
+                                        <a class="footer__a">Об Ozon / About Ozon</a></li>
+                                    <li class="footer__ozon-shop-item">
+                                        <a class="footer__a">Вакансии</a></li>
+                                    <li class="footer__ozon-shop-item">
+                                        <a class="footer__a">Стать курьером</a></li>
+                                    <li class="footer__ozon-shop-item">
+                                        <a class="footer__a">Бренд Ozon</a></li>
+                                    <li class="footer__ozon-shop-item">
+                                        <a class="footer__a">Реквизиты</a></li>
+                                    <li class="footer__ozon-shop-item">
+                                        <a class="footer__a">Информация для СМИ</a></li>
+                                    <li class="footer__ozon-shop-item">
+                                        <a class="footer__a">Арт-проект Ozon Ballan</a></li>
+                                    <li class="footer__ozon-shop-item">
+                                        <a class="footer__a">Ozon Забота</a></li>
+                                    <li class="footer__ozon-shop-item">
+                                        <a class="footer__a">Ozon Беларусь</a></li>
+                                    <li class="footer__ozon-shop-item">
+                                        <a class="footer__a">Ozon Казахстан</a></li>
+                                    <li class="footer__ozon-shop-item">
+                                        <a class="footer__a">Мобильное приложение</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="footer__list-item">
+                            <div>
+                                <h5 class="footer__h5">Зарабатывать с Ozon</h5>
+                                <ul class="footer__list-links">
+                                    <li><a class="footer__a">Стать продавцом</a></li>
+                                    <li><a class="footer__a">Стать поставщиком Ozon</a></li>
+                                    <li><a class="footer__a">Открыть пункт выдачи Ozon</a></li>
+                                    <li><a class="footer__a">Установить постамат Ozon Box</a></li>
+                                    <li><a class="footer__a">Ozon Global - Selling on Ozon</a></li>
+                                    <li><a class="footer__a">Ozon Profit</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="footer__list-item">
+                            <div>
+                                <h5 class="footer__h5">Покупать как компания</h5>
+                                <ul class="footer__list-links">
+                                    <li><a class="footer__a">Добавить компанию</a></li>
+                                    <li><a class="footer__a">Мои компании</a></li>
+                                    <li><a class="footer__a">Подарочные сертификаты</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="footer__list-item">
+                            <div>
+                                <h5 class="footer__h5">Помощь</h5>
+                                <ul class="footer__list-links">
+                                    <li><a class="footer__a">Как сделать заказ</a></li>
+                                    <li><a class="footer__a">Оплата</a></li>
+                                    <li><a class="footer__a">Доставка</a></li>
+                                    <li><a class="footer__a">Возврат товаров</a></li>
+                                    <li><a class="footer__a">Контакты</a></li>
+                                    <li><a class="footer__a">Безопасность</a></li>
+                                    <li><a class="footer__a">Условия Обработки данных</a></li>
+                                    <li><a class="footer__a">Горячая линия комплаенс</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__body-down">
+                    <div class="footer__body-down-inner">
+                        <div class="body-down-inner__list">
+                            <div class="body-down-inner__list-item">
+                                <i class="fa-brands fa-vk body-down-inner__i"></i></div>
+                            <div class="body-down-inner__list-item">
+                                <i class="fa-brands fa-square-odnoklassniki body-down-inner__i"></i></div>
+                            <div class="body-down-inner__list-item">
+                                <i class="fa-brands fa-telegram body-down-inner__i"></i></div>
+                        </div>
+                        <div class="body-down-inner__block">
+                            <a class="body-down-inner__a">© 1998 – 2023 ООО «Интернет Решения». Все права защищены.</a>
+                            <div class="body-down-inner__block-btn">
+                                <button class="body-down-inner__btn">
+                                    <i class="fa-solid fa-glasses"></i><span>Для слабовидящих</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="scripts.js"></script>
+</html>
